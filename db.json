@@ -1,0 +1,133 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "nom": "hichri",
+      "Prenom": "aya",
+      "Adresse": "nabeul",
+      "email": "ayahichri2022@gmail.com",
+      "date_debut": "2023-12-12T23:00:00.000Z",
+      "date_fin": "2023-12-15T23:00:00.000Z",
+      "Numero_tel": 95480857,
+      "Nombre_chambre": 1,
+      "Type_chambre": "double",
+      "pension": "Tout Inclus",
+      "package": "",
+      "id": 5
+    },
+    {
+      "nom": "louhichi",
+      "Prenom": "nour",
+      "Adresse": "beni khiar",
+      "email": "nourlouhichi318@gmail.com",
+      "date_debut": "2023-12-24T23:00:00.000Z",
+      "date_fin": "2023-12-27T23:00:00.000Z",
+      "Numero_tel": 95038205,
+      "Nombre_chambre": 1,
+      "pension": "Tout Inclus",
+      "Type_chambre": "single",
+      "prix": "",
+      "id": 6
+    },
+    {
+      "nom": "zayed",
+      "Prenom": "ilef",
+      "Adresse": "al aliaa",
+      "email": "ilef.zayed138@gmail.com",
+      "date_debut": "2023-06-05T22:00:00.000Z",
+      "date_fin": "2023-06-17T22:00:00.000Z",
+      "Numero_tel": 52028677,
+      "Nombre_chambre": 2,
+      "pension": "Tout Inclus",
+      "Type_chambre": "single",
+      "prix": 100,
+      "id": 10
+    },
+    {
+      "nom": "ben cheikh",
+      "Prenom": "yosr",
+      "Adresse": "dar chaaben",
+      "email": "yosr28@gmail.com",
+      "date_debut": "2023-12-29T23:00:00.000Z",
+      "date_fin": "2024-01-01T23:00:00.000Z",
+      "Numero_tel": 5652356,
+      "Nombre_chambre": 2,
+      "pension": "Tout Inclus",
+      "Type_chambre": "double",
+      "prix": 150,
+      "id": 11
+    },
+    {
+      "nom": "Belqacem",
+      "Prenom": "Ritej",
+      "Adresse": "Grombelia",
+      "email": "ritej@gmail.com",
+      "date_debut": "2023-12-11T23:00:00.000Z",
+      "date_fin": "2023-12-30T23:00:00.000Z",
+      "Numero_tel": 27000000,
+      "Nombre_chambre": 1,
+      "pension": "Pension Complète",
+      "Type_chambre": "double",
+      "prix": 150,
+      "id": 13
+    },
+    {
+      "nom": "Amine",
+      "Prenom": "Bich",
+      "Adresse": "Nabeul",
+      "email": "aminebich@gmail.com",
+      "date_debut": "2023-12-05T23:00:00.000Z",
+      "date_fin": "2023-12-19T23:00:00.000Z",
+      "Numero_tel": 23945623,
+      "Nombre_chambre": 1,
+      "pension": "Pension Complète",
+      "Type_chambre": "double",
+      "prix": 150,
+      "id": 14
+    },
+    {
+      "nom": "Khiari",
+      "Prenom": "khadija",
+      "Adresse": "beni khiar",
+      "email": "khadijakhadija@gmail.com",
+      "date_debut": "2023-12-30T23:00:00.000Z",
+      "date_fin": "2024-01-01T23:00:00.000Z",
+      "Numero_tel": 21455225,
+      "Nombre_chambre": 1,
+      "pension": "Pension Complète",
+      "Type_chambre": "double",
+      "prix": 150,
+      "id": 15
+    },
+    {
+      "nom": "baklouti",
+      "Prenom": "mariem",
+      "Adresse": "somaa",
+      "email": "mariem@gmail.com",
+      "date_debut": "2023-12-09T23:00:00.000Z",
+      "date_fin": "2023-12-15T23:00:00.000Z",
+      "Numero_tel": 24006986,
+      "Nombre_chambre": 1,
+      "pension": "Pension Complète",
+      "Type_chambre": "double",
+      "prix": 150,
+      "id": 16
+    }
+  ]
+}

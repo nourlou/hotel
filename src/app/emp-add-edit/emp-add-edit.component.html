@@ -1,0 +1,95 @@
+<div mat-dialog-title  class="form">
+    <h1>La formulaire du client</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()" >
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label> nom</mat-label>
+                <input matInput type="text" placeholder="nom" formControlName="nom">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Prenom</mat-label>
+                <input matInput placeholder="Prenom" formControlName="Prenom">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+          <mat-form-field appearance="outline">
+            <mat-label>Adresse</mat-label>
+            <input matInput placeholder="Adresse" formControlName="Adresse">
+        </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="Ex. test@gmail.com" formControlName="email">
+            </mat-form-field>
+
+        </div>
+
+        <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Numero_tel</mat-label>
+              <input matInput placeholder="Numero_tel" type="number" formControlName="Numero_tel">
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>date_debut</mat-label>
+            <input matInput [matDatepicker]="pickerStart" formControlName="date_debut">
+            <mat-hint>jj/mm/aaaa</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="pickerStart"></mat-datepicker-toggle>
+            <mat-datepicker #pickerStart></mat-datepicker>
+          </mat-form-field>
+        
+          <mat-form-field appearance="outline">
+            <mat-label>date_fin</mat-label>
+            <input matInput [matDatepicker]="pickerEnd" formControlName="date_fin">
+            <mat-hint>jj/mm/aaaa</mat-hint>
+            <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+            <mat-datepicker #pickerEnd></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Nombre_chambre</mat-label>
+              <input matInput placeholder="Numero_tel" type="number" formControlName="Nombre_chambre">
+          </mat-form-field>
+
+      </div>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Type_chambre</mat-label>
+          <mat-select formControlName="Type_chambre" (selectionChange)="updatePrice()">
+            <mat-option *ngFor="let val of Type_chambre" [value]="val">{{val}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+          <mat-label>Prix</mat-label>
+          <input matInput placeholder="Prix" formControlName="prix" [value]="empForm.get('prix')?.value || ''">
+        </mat-form-field>
+
+
+        
+      
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>pension</mat-label>
+                <mat-select formControlName="pension">
+                    <mat-option *ngFor="let val of pension" [value]="val">{{val}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+          
+      
+        </div>
+      
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Annuler</button>
+        <button mat-raised-button class="enr" type="submit">{{data ? 'Update': 'Enregistrer'}}</button>
+    </div>
+</form>
